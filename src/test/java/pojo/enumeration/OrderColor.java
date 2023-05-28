@@ -1,4 +1,4 @@
-package resources;
+package pojo.enumeration;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

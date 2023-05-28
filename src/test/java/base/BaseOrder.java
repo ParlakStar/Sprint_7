@@ -1,14 +1,14 @@
 package base;
 
-import action.OrderCardData;
-import action.OrderValue;
-import action.OrderAction;
+import pojo.OrderCardData;
+import support.OrderValue;
+import api.OrderApi;
 import io.qameta.allure.Step;
-import resources.OrderCard;
-import resources.TrackCard;
+import pojo.OrderCard;
+import pojo.TrackCard;
 
 public class BaseOrder {
-    public OrderAction orderAction = new OrderAction();
+    public OrderApi orderApi = new OrderApi();
     public OrderCardData orderCardData = new OrderCardData();
     public OrderValue orderValue = new OrderValue();
     public OrderCard orderCard;
@@ -36,7 +36,7 @@ public class BaseOrder {
 
     @Step("Отмена тестового заказа")
     public void cancelTestOrder(TrackCard trackCard) {
-        orderAction.putRequestCancelOrderByTrack(trackCard.getTrack());
+        orderApi.putRequestCancelOrderByTrack(trackCard.getTrack());
     }
 
 }

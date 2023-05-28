@@ -1,4 +1,4 @@
-package action;
+package api;
 
 import constants.PathApi;
 import io.qameta.allure.Step;
@@ -7,7 +7,7 @@ import pojo.OrderCard;
 
 import static io.restassured.RestAssured.given;
 
-public class OrderAction extends CommonApi {
+public class OrderApi extends CommonApi {
 
     @Step("Создание заказа, POST /api/v1/orders")
     public Response postRequestCreateOrder(OrderCard orderCard) {

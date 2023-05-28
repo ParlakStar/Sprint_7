@@ -8,8 +8,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import resources.OrderColor;
-import resources.TrackCard;
+import pojo.enumeration.OrderColor;
+import pojo.TrackCard;
 
 import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.hamcrest.Matchers.notNullValue;
@@ -33,12 +33,11 @@ public class CreateOrderColorTest extends BaseOrder {
      */
     @Parameterized.Parameters(name = "Значение поля color: {0}")
     public static Object[][] getColorValue() {
-        Object[][] objects = {
+        return new Object[][] {
                 {OrderColor.NO_COLOR.getValue()},
                 {OrderColor.GRAY.getValue()},
                 {OrderColor.TWO_COLOR.getValue()},
         };
-        return objects;
     }
 
     /**
@@ -54,7 +53,7 @@ public class CreateOrderColorTest extends BaseOrder {
      */
     @Test
     public void createOrderDiffColorValue() {
-        Response response = orderAction.postRequestCreateOrder(orderCard);
+        Response response = orderApi.postRequestCreateOrder(orderCard);
         response.then().assertThat().body("track", notNullValue())
                 .and().statusCode(SC_CREATED);
         cancelTestOrder(response.as(TrackCard.class));

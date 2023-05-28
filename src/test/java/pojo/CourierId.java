@@ -1,4 +1,4 @@
-package resources;
+package pojo;
 
 import com.fasterxml.jackson.annotation.JsonIncludeProperties;
 import lombok.AllArgsConstructor;

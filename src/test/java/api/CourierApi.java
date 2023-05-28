@@ -1,4 +1,4 @@
-package action;
+package api;
 
 import constants.PathApi;
 import io.qameta.allure.Step;

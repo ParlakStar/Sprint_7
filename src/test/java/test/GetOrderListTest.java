@@ -27,7 +27,7 @@ public class GetOrderListTest extends BaseOrder {
     @Test
     @DisplayName("Получение списка заказов без параметров")
     public void getOrderListNoParamTest() {
-        Response response = orderAction.getRequestGetOrderList();
+        Response response = orderApi.getRequestGetOrderList();
         response.then()
                 .assertThat()
                 .body("orders", notNullValue())
@@ -37,7 +37,7 @@ public class GetOrderListTest extends BaseOrder {
     @Test
     @DisplayName("Получение списка заказов с параметрами: Limit, Page")
     public void getOrderListParamLimitPageTest() {
-        Response response = orderAction.getRequestGetOrderList(
+        Response response = orderApi.getRequestGetOrderList(
                 OrderListParams.LIMIT, orderValue.paramValue(OrderListParams.LIMIT),
                 OrderListParams.PAGE, orderValue.paramValue(OrderListParams.PAGE));
         response.then()
@@ -49,7 +49,7 @@ public class GetOrderListTest extends BaseOrder {
     @Test
     @DisplayName("Получение списка заказов с параметрами: Limit, Page, Nearest Station")
     public void getOrderListParamLimitPageStationTest() {
-        Response response = orderAction.getRequestGetOrderList(
+        Response response = orderApi.getRequestGetOrderList(
                 OrderListParams.LIMIT, orderValue.paramValue(OrderListParams.LIMIT),
                 OrderListParams.PAGE, orderValue.paramValue(OrderListParams.PAGE),
                 OrderListParams.NEAREST_STATION, orderValue.paramValue(OrderListParams.NEAREST_STATION));
@@ -63,7 +63,7 @@ public class GetOrderListTest extends BaseOrder {
     @DisplayName("Получение списка заказов с параметром: Courier ID")
     public void getOrderListParamCourierIdTest() {
         String courierId = baseCourier.courierApi.courierId(baseCourier.courierCard);
-        Response response = orderAction.getRequestGetOrderList(OrderListParams.COURIER_ID, courierId);
+        Response response = orderApi.getRequestGetOrderList(OrderListParams.COURIER_ID, courierId);
         response.then()
                 .assertThat()
                 .body("orders", notNullValue())
@@ -74,7 +74,7 @@ public class GetOrderListTest extends BaseOrder {
     @DisplayName("Получение списка заказов с параметрами: Courier ID, nearestStation")
     public void getOrderListParamCourierIdStationTest() {
         String courierId = baseCourier.courierApi.courierId(baseCourier.courierCard);
-        Response response = orderAction.getRequestGetOrderList(
+        Response response = orderApi.getRequestGetOrderList(
                 OrderListParams.COURIER_ID, courierId,
                 OrderListParams.NEAREST_STATION, orderValue.paramValue(OrderListParams.NEAREST_STATION));
         response.then()

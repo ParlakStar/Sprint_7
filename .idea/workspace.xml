@@ -5,36 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebd44ad-e111-449d-b312-d34f3fd5d00a" name="Changes" comment="POM">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/CommonApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/CourierApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/CourierData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/OrderAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/OrderCardData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/action/OrderValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseCourier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/constants/CourierFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/constants/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/constants/OrderListParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/constants/PathApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/CourierCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/CourierId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/OrderCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/OrderColor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/TrackCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/CreateCourierTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/CreateOrderColorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/CreateOrderNullColorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/GetOrderListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/LoginCourierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/support/Support.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/SupportTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/CommonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/CommonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/CourierApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/CourierApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/CourierData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/CourierData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/OrderAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/OrderApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/OrderCardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/OrderCardData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/action/OrderValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/support/OrderValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseCourier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseCourier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/CourierCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/CourierCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/CourierId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/CourierId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/OrderCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/OrderCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/OrderColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/enumeration/OrderColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/TrackCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pojo/TrackCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CreateOrderColorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CreateOrderColorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/CreateOrderNullColorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CreateOrderNullColorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/GetOrderListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/GetOrderListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit3 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -65,7 +68,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/alex_/Sprint_7",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "last_opened_file_path": "C:/Users/alex_/Downloads/Yandex_Sprint_7-develop",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -76,43 +81,18 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\alex_\Sprint_7\src\test\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="actions" />
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="support" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.test in Sprint_7">
-    <configuration name="CreateCourierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CreateCourierTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreateCourierTest.createCourierLoginNullValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sprint_7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CreateCourierTest" />
-      <option name="METHOD_NAME" value="createCourierLoginNullValueTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CreateOrderColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <extension name="coverage">
@@ -143,6 +123,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SupportTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SupportTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SupportTest.testTwoQuantityRandom" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.SupportTest" />
+      <option name="METHOD_NAME" value="testTwoQuantityRandom" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test in Sprint_7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_7" />
       <option name="TEST_OBJECT" value="directory" />
@@ -154,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.test in Sprint_7" />
+        <item itemvalue="JUnit.SupportTest" />
+        <item itemvalue="JUnit.SupportTest.testTwoQuantityRandom" />
         <item itemvalue="JUnit.CreateOrderNullColorTest" />
         <item itemvalue="JUnit.CreateOrderColorTest" />
-        <item itemvalue="JUnit.CreateCourierTest" />
-        <item itemvalue="JUnit.CreateCourierTest.createCourierLoginNullValueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -184,8 +195,26 @@
       <option name="project" value="LOCAL" />
       <updated>1685047757951</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="POM">
+      <created>1685219878686</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685219878686</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First" />

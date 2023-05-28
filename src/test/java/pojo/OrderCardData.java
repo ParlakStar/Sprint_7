@@ -1,7 +1,8 @@
-package action;
+package pojo;
 
 import lombok.Data;
 import org.apache.commons.lang3.RandomStringUtils;
+import support.Support;
 
 import java.util.Random;
 
@@ -22,33 +23,13 @@ public class OrderCardData {
         lastName = randomString();
         address = randomString();
         metroStation = random.nextInt(50);
-        phone = phone();
+        phone = Support.phone();
         rentTime = random.nextInt(10);
-        deliveryDate = data();
+        deliveryDate = Support.data();
         comment = randomString();
     }
 
     private String randomString() {
         return RandomStringUtils.randomAlphabetic(10);
-    }
-
-
-    //todo: change data
-    private String data() {
-        String day = String.valueOf(random.nextInt(28));
-        String month = String.valueOf(random.nextInt(13));
-        String year = String.valueOf(random.nextInt((2023 - 2020) + 1) + 2020);
-
-        return year + "-" + month + "-" + day;
-    }
-
-    //todo: change phone
-    private String phone() {
-        String phoneFormat3NumberCod = String.valueOf(random.nextInt((999 - 100) + 1) + 100);
-        String phoneFormat3Number = String.valueOf(random.nextInt((999 - 100) + 1) + 100);
-        String phoneFormat2Number = String.valueOf(random.nextInt((99 - 10) + 1) + 10);
-        String phoneFormat2NumberLast = String.valueOf(random.nextInt((99 - 10) + 1) + 10);
-
-        return "+7" + " " + phoneFormat3NumberCod + " " + phoneFormat3Number + " " + phoneFormat2Number + " " + phoneFormat2NumberLast;
     }
 }

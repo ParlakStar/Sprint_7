@@ -1,10 +1,10 @@
 package base;
 
-import action.CourierApi;
-import action.CourierData;
+import api.CourierApi;
+import pojo.CourierData;
 import constants.CourierFields;
 import io.qameta.allure.Step;
-import resources.CourierCard;
+import pojo.CourierCard;
 
 public class BaseCourier {
     private final CourierData courierData = new CourierData();
@@ -27,6 +27,7 @@ public class BaseCourier {
     @Step("Создание и заполение карточки курьера (login + password)")
     private void generateLogPassCourierData() {
         courierData.generateLoginPassName();
+
         courierCard = new CourierCard(
                 courierData.getCourierLogin(),
                 courierData.getCourierPassword());
@@ -36,6 +37,7 @@ public class BaseCourier {
     public void generateCustomCourierData(String firstField, String secondField) {
         courierData.generateLoginPassName();
         courierCard = new CourierCard();
+
         fillField(firstField);
         fillField(secondField);
     }
