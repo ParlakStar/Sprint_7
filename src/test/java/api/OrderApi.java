@@ -3,13 +3,11 @@ package action;
 import constants.PathApi;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import resources.OrderCard;
+import pojo.OrderCard;
 
 import static io.restassured.RestAssured.given;
 
 public class OrderAction extends CommonApi {
-    public OrderAction() {
-    }
 
     @Step("Создание заказа, POST /api/v1/orders")
     public Response postRequestCreateOrder(OrderCard orderCard) {
@@ -57,11 +55,5 @@ public class OrderAction extends CommonApi {
         given(request())
                 .queryParam("track", trackNumber)
                 .put(PathApi.CANCEL_ORDER);
-    }
-
-    @Step("Завершение заказа по id, PUT /api/v1/orders/finish/:id")
-    public void putRequestFinishOrderById(int orderId) {
-        given(request())
-                .put(PathApi.FINISH_ORDER + "{:id}", orderId);
     }
 }

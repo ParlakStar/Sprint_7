@@ -3,8 +3,8 @@ package action;
 import constants.PathApi;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
-import resources.CourierCard;
-import resources.CourierId;
+import pojo.CourierCard;
+import pojo.CourierId;
 
 import static io.restassured.RestAssured.given;
 
@@ -25,21 +25,22 @@ public class CourierApi extends CommonApi {
     }
 
     @Step("Удаление курьера")
-    public Response deleteCourier(CourierCard courierCard) {
+    public void deleteCourier(CourierCard courierCard) {
         String courierId = courierId(courierCard);
-        return deleteCourierById(courierId);
+        deleteCourierById(courierId);
     }
 
     @Step("Поиск курьера по ID")
     public String courierId(CourierCard courierCard) {
         Response response = requestLogin(courierCard);
         CourierId courierId = response.as(CourierId.class);
+
         return courierId.getId();
     }
 
     @Step("Удалить курьера по ID")
-    public Response deleteCourierById(String courierId) {
-        return given(request())
+    public void deleteCourierById(String courierId) {
+         given(request())
                 .delete(PathApi.COURIER_BASE_URL + "/{id}", courierId);
     }
 }
